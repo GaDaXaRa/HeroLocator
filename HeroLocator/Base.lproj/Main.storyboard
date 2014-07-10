@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Item-->
+        <!--View Controller - Fary compass-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -35,7 +35,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="MiK-cZ-dkM"/>
+                    <tabBarItem key="tabBarItem" title="Fary compass" id="MiK-cZ-dkM"/>
                     <connections>
                         <outlet property="eastImage" destination="wUe-2n-D1l" id="3we-Ah-yXq"/>
                         <outlet property="northImage" destination="D6y-Un-0gX" id="loQ-Dx-LKT"/>
@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="814" y="99"/>
         </scene>
-        <!--View Controller - Item-->
+        <!--Map Controller - Map-->
         <scene sceneID="ooV-5g-kkn">
             <objects>
-                <viewController id="gqm-jn-qD9" sceneMemberID="viewController">
+                <viewController id="gqm-jn-qD9" customClass="MapController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BJv-HL-leG"/>
                         <viewControllerLayoutGuide type="bottom" id="u1e-Ly-Ye0"/>
@@ -58,9 +58,44 @@
                     <view key="view" contentMode="scaleToFill" id="NLM-8l-kMT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nh8-mv-qCG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.75000000000000011" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSY-C9-xqk">
+                                <rect key="frame" x="20" y="65" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1yo-7a-FDs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wHM-CD-g9Q"/>
+                                    <barButtonItem title="Center" id="cEa-Om-LW7">
+                                        <connections>
+                                            <action selector="centerPressed:" destination="gqm-jn-qD9" id="BYF-S0-i4g"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Rgl-vi-zw4"/>
+                                    <barButtonItem title="Type" id="coE-hn-5Oy">
+                                        <connections>
+                                            <action selector="typePressed:" destination="gqm-jn-qD9" id="MgF-J5-Ueq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="BNR-sw-FkO"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="7oY-m7-xqS"/>
+                    <tabBarItem key="tabBarItem" title="Map" id="7oY-m7-xqS"/>
+                    <connections>
+                        <outlet property="mapView" destination="nh8-mv-qCG" id="RyW-L7-4YM"/>
+                        <outlet property="textField" destination="rSY-C9-xqk" id="X4j-Aa-Aqj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MxB-Ip-VnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,8 +113,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="ODt-q3-7je"/>
                         <segue destination="gqm-jn-qD9" kind="relationship" relationship="viewControllers" id="D7I-2Y-4PZ"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="ODt-q3-7je"/>
                     </connections>
                 </tabBarController>
             </objects>

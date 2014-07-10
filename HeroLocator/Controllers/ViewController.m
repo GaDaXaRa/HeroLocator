@@ -31,11 +31,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     self.locationHelper = [[LocationHelper alloc] init];
     self.locationHelper.delegate = self;
     if ([self.locationHelper isLocationEnabled]) {
         [self.locationHelper startMonitoring];
     }
+}
+
+- (void) viewDidDisappear:(BOOL)animated {
+    self.locationHelper = nil;
+    [super viewDidDisappear:animated];
 }
 
 - (void)resetImages {

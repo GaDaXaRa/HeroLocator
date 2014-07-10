@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Bristol Bar</string>
+		<key>lon</key>
+		<real>-3.69342</real>
+		<key>lat</key>
+		<real>40.422424</real>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ice Bar</string>
+		<key>lon</key>
+		<real>-3.704579</real>
+		<key>lat</key>
+		<real>40.413759</real>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bar La Gloria</string>
+		<key>lon</key>
+		<real>-3.701504</real>
+		<key>lat</key>
+		<real>40.42326</real>
+	</dict>
+</array>
+</plist>
