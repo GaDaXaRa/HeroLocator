@@ -130,9 +130,13 @@
 			<array>
 				<string>3F24C264196EC2680010EE2D</string>
 				<string>3F24C234196E782C0010EE2D</string>
+				<string>3F24C270196EE80B0010EE2D</string>
+				<string>3F24C26D196EE80B0010EE2D</string>
+				<string>3F24C26F196EE80B0010EE2D</string>
 				<string>3F24C258196E87DE0010EE2D</string>
 				<string>3F24C226196E782B0010EE2D</string>
 				<string>3F24C22F196E782C0010EE2D</string>
+				<string>3F24C26E196EE80B0010EE2D</string>
 			</array>
 			<key>isa</key>
 			<string>PBXResourcesBuildPhase</string>
@@ -1063,6 +1067,10 @@
 		<dict>
 			<key>children</key>
 			<array>
+				<string>3F24C269196EE80B0010EE2D</string>
+				<string>3F24C26A196EE80B0010EE2D</string>
+				<string>3F24C26B196EE80B0010EE2D</string>
+				<string>3F24C26C196EE80B0010EE2D</string>
 				<string>3F24C257196E87DE0010EE2D</string>
 			</array>
 			<key>isa</key>
@@ -1271,12 +1279,82 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>View</string>
 			<key>path</key>
 			<string>View</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3F24C269196EE80B0010EE2D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>coffee.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3F24C26A196EE80B0010EE2D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>wine-bottle.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3F24C26B196EE80B0010EE2D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>guitar.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3F24C26C196EE80B0010EE2D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>hammer.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3F24C26D196EE80B0010EE2D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3F24C269196EE80B0010EE2D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3F24C26E196EE80B0010EE2D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3F24C26A196EE80B0010EE2D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3F24C26F196EE80B0010EE2D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3F24C26B196EE80B0010EE2D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3F24C270196EE80B0010EE2D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3F24C26C196EE80B0010EE2D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

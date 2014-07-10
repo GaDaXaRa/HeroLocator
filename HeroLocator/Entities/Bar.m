@@ -16,6 +16,7 @@
     if (self) {
         _title = placeMark.name;
         _coordinate = placeMark.coordinate;
+        _localType = 0;
     }
     
     return self;
@@ -28,6 +29,7 @@
         _title = [dictionary valueForKey:@"name"];
         _coordinate.latitude = [[dictionary valueForKey:@"lat"] floatValue];
         _coordinate.longitude = [[dictionary valueForKey:@"lon"] floatValue];
+        _localType = [[dictionary valueForKey:@"type"] integerValue];
     }
     
     return self;

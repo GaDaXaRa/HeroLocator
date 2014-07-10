@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>type</key>
+		<integer>0</integer>
 		<key>name</key>
 		<string>Bar Cock</string>
 		<key>lon</key>
@@ -11,6 +13,8 @@
 		<real>40.419886</real>
 	</dict>
 	<dict>
+		<key>type</key>
+		<integer>1</integer>
 		<key>name</key>
 		<string>Bristol Bar</string>
 		<key>lon</key>
@@ -19,6 +23,8 @@
 		<real>40.422424</real>
 	</dict>
 	<dict>
+		<key>type</key>
+		<integer>2</integer>
 		<key>name</key>
 		<string>Ice Bar</string>
 		<key>lon</key>
@@ -27,6 +33,8 @@
 		<real>40.413759</real>
 	</dict>
 	<dict>
+		<key>type</key>
+		<integer>3</integer>
 		<key>name</key>
 		<string>Bar La Gloria</string>
 		<key>lon</key>
