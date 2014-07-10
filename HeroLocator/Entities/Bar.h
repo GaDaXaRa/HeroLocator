@@ -11,11 +11,9 @@
 
 @interface Bar : NSObject <MKAnnotation>
 
-+ (NSArray *)createBarArrayFromFilePath:(NSString *)filePath;
-
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
-@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *title;
 @property (nonatomic) CLLocationCoordinate2D coordinate;
 
 @end

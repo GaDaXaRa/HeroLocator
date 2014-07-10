@@ -4,6 +4,14 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Bar Cock</string>
+		<key>lon</key>
+		<real>-3.698849</real>
+		<key>lat</key>
+		<real>40.419886</real>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Bristol Bar</string>
 		<key>lon</key>
 		<real>-3.69342</real>
