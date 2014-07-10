@@ -10,6 +10,17 @@
 
 @implementation Bar
 
+- (instancetype)initWithPlaceMark:(MKPlacemark *)placeMark {
+    self = [super init];
+    
+    if (self) {
+        _title = placeMark.name;
+        _coordinate = placeMark.coordinate;
+    }
+    
+    return self;
+}
+
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
     

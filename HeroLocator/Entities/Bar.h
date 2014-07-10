@@ -11,6 +11,7 @@
 
 @interface Bar : NSObject <MKAnnotation>
 
+- (instancetype)initWithPlaceMark:(MKPlacemark *)placeMark;
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @property (nonatomic, copy) NSString *title;

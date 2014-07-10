@@ -77,7 +77,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="wHM-CD-g9Q"/>
-                                    <barButtonItem title="Center" id="cEa-Om-LW7">
+                                    <barButtonItem systemItem="refresh" id="cEa-Om-LW7">
                                         <connections>
                                             <action selector="centerPressed:" destination="gqm-jn-qD9" id="BYF-S0-i4g"/>
                                         </connections>
@@ -89,6 +89,13 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="BNR-sw-FkO"/>
+                                    <barButtonItem style="plain" id="pa7-P3-yWI">
+                                        <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="Xk8-V6-8kc">
+                                            <rect key="frame" x="212" y="7" width="51" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </switch>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cAH-ls-v7v"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -96,7 +103,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="7oY-m7-xqS"/>
                     <connections>
-                        <outlet property="mapView" destination="nh8-mv-qCG" id="RyW-L7-4YM"/>
+                        <outlet property="localSwitch" destination="Xk8-V6-8kc" id="1rv-cp-0z9"/>
+                        <outlet property="map" destination="nh8-mv-qCG" id="maB-2s-ksO"/>
                         <outlet property="textField" destination="rSY-C9-xqk" id="X4j-Aa-Aqj"/>
                     </connections>
                 </viewController>
@@ -107,7 +115,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Bie-tJ-x8a">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zWy-JZ-XzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zab-PT-Gkq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -120,6 +127,7 @@
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="ODt-q3-7je"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWy-JZ-XzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="288" y="99"/>
         </scene>
