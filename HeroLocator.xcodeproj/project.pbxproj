@@ -94,8 +94,8 @@
 			<array>
 				<string>3F24C255196E7A7E0010EE2D</string>
 				<string>3F24C232196E782C0010EE2D</string>
-				<string>3F24C25C196E9CC80010EE2D</string>
 				<string>3F24C261196EADBA0010EE2D</string>
+				<string>3F486354197036450072668B</string>
 				<string>3F24C267196EC8A60010EE2D</string>
 				<string>3F24C22C196E782C0010EE2D</string>
 				<string>3F24C228196E782B0010EE2D</string>
@@ -1102,10 +1102,10 @@
 		<dict>
 			<key>children</key>
 			<array>
+				<string>3F486352197036450072668B</string>
+				<string>3F486353197036450072668B</string>
 				<string>3F24C230196E782C0010EE2D</string>
 				<string>3F24C231196E782C0010EE2D</string>
-				<string>3F24C25A196E9CC80010EE2D</string>
-				<string>3F24C25B196E9CC80010EE2D</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1113,43 +1113,6 @@
 			<string>Controllers</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F24C25A196E9CC80010EE2D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MapController.h</string>
-			<key>path</key>
-			<string>../../../../Documents/MapController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F24C25B196E9CC80010EE2D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>MapController.m</string>
-			<key>path</key>
-			<string>../../../../Documents/MapController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F24C25C196E9CC80010EE2D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3F24C25B196E9CC80010EE2D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>3F24C25D196E9D1C0010EE2D</key>
 		<dict>
@@ -1353,6 +1316,39 @@
 		<dict>
 			<key>fileRef</key>
 			<string>3F24C26C196EE80B0010EE2D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3F486352197036450072668B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MapController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3F486353197036450072668B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MapController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3F486354197036450072668B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3F486353197036450072668B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>

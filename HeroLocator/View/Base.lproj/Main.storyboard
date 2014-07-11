@@ -62,8 +62,10 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nh8-mv-qCG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
                                 <connections>
                                     <outlet property="delegate" destination="gqm-jn-qD9" id="mva-Va-Ngg"/>
+                                    <outletCollection property="gestureRecognizers" destination="KUE-sY-IaK" appends="YES" id="ZFe-dz-fde"/>
                                 </connections>
                             </mapView>
                             <textField opaque="NO" clipsSubviews="YES" alpha="0.75000000000000011" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSY-C9-xqk">
@@ -79,6 +81,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
+                                    <barButtonItem systemItem="play" id="7h8-FD-WAU">
+                                        <connections>
+                                            <action selector="cameraPressed:" destination="gqm-jn-qD9" id="4Ol-Ek-7rt"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="wHM-CD-g9Q"/>
                                     <barButtonItem systemItem="refresh" id="cEa-Om-LW7">
                                         <connections>
@@ -94,7 +101,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="BNR-sw-FkO"/>
                                     <barButtonItem style="plain" id="pa7-P3-yWI">
                                         <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="Xk8-V6-8kc">
-                                            <rect key="frame" x="212" y="7" width="51" height="31"/>
+                                            <rect key="frame" x="219" y="7" width="51" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </switch>
                                     </barButtonItem>
@@ -112,6 +119,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MxB-Ip-VnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KUE-sY-IaK">
+                    <connections>
+                        <action selector="mapTouch:" destination="gqm-jn-qD9" id="ALw-IC-0tI"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="814" y="757"/>
         </scene>
